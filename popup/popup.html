@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Time</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- <h1 class="popup-title">Study Time</h1> -->
+
+
+
+    <div class="popup-container">
+
+        <div class="container-setting" id="current-url-setting">
+            <label class="label-url">Block this Website :</label>
+            <p class="urlInput" id="url-container"></p>
+            <button class="block-btn" id="url-block-btn">Block</button>
+        </div>
+
+
+
+
+        <form class="container-setting" id="block-form">
+            <label class="label-url">Enter a website URL to block:</label>
+            <input class="urlInput" type="text" id="url-input" name="url">
+            <button class="block-btn" type="submit">Block</button>
+        </form>
+        <button class="blocked-show block-btn">Show Blocked Website List</button>
+
+        <div id="blocked-list-Container" class="container-setting hidden">
+            <label class="label-url">Click URL To UnBlock:</label>
+
+            <ul id="blocked-list"></ul>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

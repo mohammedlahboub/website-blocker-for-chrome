@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefae0;
+    color: rgb(27, 28, 29);
+    /* aspect-ratio: 16/9; */
+    width: 20rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* height: 500px; */
+}
+
+.popup-title {
+    background-color: #ffb703;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+    color: #000000;
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.popup-link-container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.container-setting {
+    background-color: #70caf0;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: auto 25%;
+}
+
+.label-url {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    grid-column: span 2;
+}
+
+.block-btn {
+    font-size: 0.9rem;
+    background-color: #000000;
+    color: #e63946;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.urlInput {
+    font-weight: 500;
+    font-size: 0.9rem;
+    background-color: aliceblue;
+    padding: 0.2rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    outline: none;
+    border: none;
+
+}
+
+#blocked-list>li {
+    padding: 0.1rem 0.5rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: fit-content;
+    background-color: #1d3557;
+    margin-bottom: 0.2rem;
+}
+
+.hidden {
+    display: none;
+}
