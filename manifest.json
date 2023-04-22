@@ -1,8 +1,8 @@
 {
-  "name": "Study Time",
+  "name": "Website Blocker",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Study Time",
+  "description": "Website Blocker",
   "permissions": ["tabs", "storage", "activeTab"],
   "background": {
     "scripts": ["background.js"],
