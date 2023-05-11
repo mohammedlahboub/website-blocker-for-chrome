@@ -4,7 +4,10 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     chrome.storage.sync.get('blockedWebsites', (data) => {
 
-        let blockedWebsites = data.blockedWebsites || [];
+        let blockedWebsitesExt = data.blockedWebsites || [];
+        let cstArr = ['twitch.tv', 'twitter.com', 'www.tiktok.com', 'reddit.com', 'pornhub.com'];
+        let blockedWebsites = blockedWebsitesExt.concat(cstArr);
+        // console.log(blockedWebsites); 
         let url = tab.url.toLowerCase();
 
         for (let i = 0; i < blockedWebsites.length; i++) {
